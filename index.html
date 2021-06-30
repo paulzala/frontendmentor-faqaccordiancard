@@ -5,36 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/accordion.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+<div class="container">
+  <div class="image-box">
+    <div class="illustration-mobile">
+      <img class="illustration-mobile" src="images/illustration-woman-online-mobile.svg" alt="illustration">
+    </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+    <div class="illustration-desktop">
+      <img class="illustration-desktop" src="images/illustration-woman-online-desktop.svg" alt="illustration">
+    </div>
+    <img class="illustration-box-desktop" src="images/illustration-box-desktop.svg" alt="illustration">
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <img class="shadow-mobile" src="images/bg-pattern-mobile.svg" alt="shadow">
   </div>
+
+  <main>
+    <h1>FAQ</h1>
+
+    <div id="accordion">
+      <ul>
+        <li>
+          <div class="question">How many team members can I invite?<span class="caret"></span></div>
+          <div class="answer">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </div>
+        </li>
+
+        <li>
+          <div class="question">What is the maximum file upload size?<span class="caret"></span></div>
+          <div class="answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
+        </li>
+
+        <li>
+          <div class="question">How do I reset my password?<span class="caret"></span></div>
+          <div class="answer">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+        </li>
+
+        <li>
+          <div class="question">Can I cancel my subscription?<span class="caret"></span></div>
+          <div class="answer">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+        </li>
+
+        <li>
+          <div class="question">Do you provide additional support?<span class="caret"></span></div>
+          <div class="answer">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </main>
+
+</div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">paulzala</a>.
+  </footer>
+<script>
+  window.accordion.init();
+</script>
 </body>
 </html>
