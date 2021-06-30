@@ -124,7 +124,13 @@ h1 {
         display: block;
     }
     h1 {
+        margin-top: 0;
         text-align: left;
+    }
+    main {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
     }
 }
 
